@@ -1,0 +1,45 @@
+# Core scientific computing
+numpy>=1.24,<3.0
+scipy>=1.10
+matplotlib>=3.7
+pandas>=2.0
+
+# QEC libraries
+stim==1.15.0
+PyMatching==2.2.2
+sinter==1.15.0
+qecsim==1.0b9
+beliefmatching==0.1.1
+
+# Parallel execution
+joblib>=1.3
+
+# Numerical / graph
+numba>=0.58
+networkx>=3.0
+sympy>=1.12
+galois==0.4.6
+Cython>=3.0
+
+# Optimization (used by some decoders)
+cvxpy>=1.4
+clarabel>=0.6
+osqp>=0.6
+scs>=3.2
+
+# Jupyter (for notebook execution)
+jupyter>=1.0
+jupyterlab>=4.0
+nbconvert>=7.0
+ipykernel>=6.0
+
+# Utilities
+tqdm>=4.60
+PyYAML>=6.0
+pillow>=10.0
+
+# Custom packages from git (installed separately in setup.sh)
+# - ldpc: pip install ldpc (or git+https://github.com/quantumgizmos/ldpc.git)
+# - localuf: pip install git+https://github.com/timchan0/localuf.git
+# - qLDPC: pip install git+https://github.com/qLDPCOrg/qLDPC.git
+# - StimCircuits: pip install git+https://github.com/oscarhiggott/StimCircuits.git

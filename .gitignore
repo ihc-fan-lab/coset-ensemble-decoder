@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local data / runs (never commit experimental output)
+*.log
+*.pid
+savedata/
+analysis_outputs/
+plot_data/
+node_modules/
+
+# Large or generated artefacts
+*.tar.gz
+*.tgz
+*.zip
+*.npz
+
+# But keep tracked rebuttal demo outputs (small, needed for run_plot_only.sh)
+!rebuttal/rebuttal_outputs/**
