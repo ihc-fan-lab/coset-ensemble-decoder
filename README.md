@@ -1,8 +1,8 @@
-# Artifact Evaluation: Coset Ensemble Decoder for QEC with Algorithm-Hardware Co-Design
+# Coset Ensemble Decoder for QEC with Algorithm-Hardware Co-Design
 
+**Paper:** [Coset Ensemble Decoder for Quantum Error Correction with Algorithm-Hardware Co-Design](https://arxiv.org/abs/2606.11076) (ISCA 2026)
 
-
-This artifact provides the software implementation and experiment scripts for the Coset Ensemble Decoder. It includes the complete decoder pipeline, a cycle-accurate hardware simulator, and all scripts needed to reproduce the main results.
+This repository provides the software implementation and experiment scripts for the Coset Ensemble Decoder. It includes the complete decoder pipeline, a cycle-accurate hardware simulator, and all scripts needed to reproduce the main results.
 
 > **Algorithm–hardware co-design:** This project couples decoder algorithms with a dedicated hardware architecture. The current release includes software implementations and a **cycle-accurate hardware simulator** (`hardware/`) that models the proposed design's behavior. **Verilog RTL will be released in `hardware_code/` soon.**
 
@@ -16,7 +16,8 @@ This artifact provides the software implementation and experiment scripts for th
 4. [Mapping to Paper Figures](#4-mapping-to-paper-figures)
 5. [Understanding Results and Statistical Variability](#5-understanding-results-and-statistical-variability)
 6. [Project Structure](#6-project-structure)
-7. [Troubleshooting](#7-troubleshooting)
+7. [Citation](#7-citation)
+8. [Troubleshooting](#8-troubleshooting)
 
 ---
 
@@ -256,7 +257,27 @@ ae_artifact/
 
 ---
 
-## 7. Troubleshooting
+## 7. Citation
+
+If you use this code in your research, please cite our paper:
+
+```bibtex
+@misc{liang2026cosetensembledecoderquantum,
+      title={Coset Ensemble Decoder for Quantum Error Correction with Algorithm-Hardware Co-Design}, 
+      author={Shuang Liang and Jubo Xu and Giulio Bassanino and Qianzhou Wang and Yidong Zhou and Yuncheng Lu and Zhiwen Mo and Paul H. J. Kelly and Bo Yuan and Wayne Luk and Hongxiang Fan},
+      year={2026},
+      eprint={2606.11076},
+      archivePrefix={arXiv},
+      primaryClass={cs.AR},
+      url={https://arxiv.org/abs/2606.11076}, 
+}
+```
+
+**Paper:** [arXiv:2606.11076](https://arxiv.org/abs/2606.11076) · Accepted at ISCA 2026
+
+---
+
+## 8. Troubleshooting
 
 ### Import errors
 

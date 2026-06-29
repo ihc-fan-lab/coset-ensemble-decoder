@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # ============================================================
-# Artifact Evaluation Setup Script
+# Setup Script
 # Paper: Coset Ensemble Decoder for QEC with Algorithm-Hardware Co-Design
-# ISCA 2025 - Paper #1199
+# https://arxiv.org/abs/2606.11076
 # Verilog RTL to be released in hardware_code/
 # ============================================================
 set -e
@@ -12,7 +12,7 @@ PYTHON_VERSION="3.10"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "============================================"
-echo "  QEC Artifact Evaluation - Environment Setup"
+echo "  Coset Ensemble Decoder - Environment Setup"
 echo "============================================"
 echo ""
 echo "This script will:"
