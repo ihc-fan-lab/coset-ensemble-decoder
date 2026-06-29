@@ -3,6 +3,7 @@
 # Artifact Evaluation Setup Script
 # Paper: Coset Ensemble Decoder for QEC with Algorithm-Hardware Co-Design
 # ISCA 2025 - Paper #1199
+# Verilog RTL to be released in hardware_code/
 # ============================================================
 set -e
 

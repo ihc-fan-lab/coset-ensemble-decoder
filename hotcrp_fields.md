@@ -4,7 +4,7 @@
 Coset Ensemble Decoder for Quantum Error Correction with Algorithm-Hardware Co-Design
 
 ## Abstract
-This artifact provides the software implementation of the Coset Ensemble Decoder described in the paper. It includes the complete decoder pipeline (Union-Find clustering, ensemble forest exploration, reverse-order elimination, graph compression), a cycle-accurate hardware simulator, and all experiment scripts and plotting notebooks needed to reproduce the main results (Figures 8, 10, 12, 16). The artifact runs on a standard multi-core CPU server; no FPGA or quantum hardware is required. Dependencies: Python 3.10, Stim (circuit-level noise), PyMatching (MWPM baseline), NumPy, SciPy, Matplotlib, Jupyter, joblib.
+This artifact provides the software implementation of the Coset Ensemble Decoder described in the paper. It includes the complete decoder pipeline (Union-Find clustering, ensemble forest exploration, reverse-order elimination, graph compression), a cycle-accurate hardware simulator, and all experiment scripts and plotting notebooks needed to reproduce the main results (Figures 8, 10, 12, 16). The artifact runs on a standard multi-core CPU server; no FPGA or quantum hardware is required. The Verilog RTL hardware implementation will be released in `hardware_code/` soon; the current release uses a software golden model (`hardware/`) to evaluate the proposed architecture. Dependencies: Python 3.10, Stim (circuit-level noise), PyMatching (MWPM baseline), NumPy, SciPy, Matplotlib, Jupyter, joblib.
 
 ## Badges Applied For
 - [x] Artifact Available
@@ -22,7 +22,8 @@ Four reproduction modes are provided: (1) **Plot-only** (~1 min): regenerates al
 ## Hardware Dependencies
 - Minimum: x86-64 CPU, 8 cores, 32 GB RAM (sufficient for lightweight validation mode)
 - Recommended: x86-64 CPU, 32+ cores, 128 GB RAM (for full reproduction; the largest experiment at d=11 with 40M Monte Carlo shots requires approximately 90 GB RAM when using 16 parallel workers)
-- No GPU, FPGA, or special hardware is required. The proposed hardware architecture is evaluated through a cycle-accurate software simulator included in the artifact.
+- No GPU, FPGA, or special hardware is required. The proposed hardware architecture is evaluated through a cycle-accurate software simulator included in the artifact (`hardware/`).
+- Verilog RTL will be added to `hardware_code/` soon.
 
 ## Software Dependencies
 - Operating system: Ubuntu 20.04+ or equivalent Linux distribution

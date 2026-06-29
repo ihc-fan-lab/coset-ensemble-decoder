@@ -4,6 +4,8 @@
 
 This artifact provides the software implementation and experiment scripts for the Coset Ensemble Decoder. It includes the complete decoder pipeline, a cycle-accurate hardware simulator, and all scripts needed to reproduce the main results.
 
+> **Algorithm–hardware co-design:** This project couples decoder algorithms with a dedicated hardware architecture. The current release includes software implementations and a **cycle-accurate hardware simulator** (`hardware/`) that models the proposed design's behavior. **Verilog RTL will be released in `hardware_code/` soon.**
+
 ---
 
 ## Table of Contents
@@ -28,7 +30,8 @@ This artifact provides the software implementation and experiment scripts for th
 | Full | 32+ | 128 GB | ~1 week |
 
 - **Architecture:** x86-64 (tested on Intel Xeon)
-- **No GPU, FPGA, or quantum hardware required.** The hardware architecture is evaluated via a cycle-accurate software simulator included in this artifact.
+- **No GPU, FPGA, or quantum hardware required.** The hardware architecture is evaluated via a cycle-accurate software simulator included in this artifact (`hardware/`).
+- **Verilog RTL:** The Verilog hardware implementation will be added to `hardware_code/` soon.
 
 ---
 
@@ -233,7 +236,8 @@ ae_artifact/
 │   ├── uf_listdecoding.py    # Ensemble forest exploration (Sec. III-A)
 │   ├── peeling_efficient.py  # Reverse-order elimination (Sec. III-B)
 │   └── ...
-├── hardware/                 # Cycle-accurate hardware simulator
+├── hardware_code/            # Verilog RTL (to be released soon)
+├── hardware/                 # Cycle-accurate hardware simulator (software golden model)
 │   ├── QuliD_hardware.py     # Main hardware model (Sec. IV)
 │   └── ...
 ├── tools/                    # Noise generation & metrics
